@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ConvoExport</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+         max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #1f2937; }
+  h1 { font-size: 26px; } h2 { font-size: 19px; margin-top: 32px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid #d1d5db; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; }
+  .meta { color: #6b7280; font-size: 14px; }
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 40px 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — ConvoExport</h1>
+<p class="meta">Effective date: November 15, 2026 · Applies to ConvoExport version 1.0.0 and later 1.x versions.</p>
+
+<h2>The short version</h2>
+<p>ConvoExport has <strong>no account, no analytics, and no server</strong>. It makes
+<strong>no network requests at all</strong>. Your conversations are read only inside your
+own browser, turned into an export file on your device, and never collected, transmitted,
+sold, or shared. Pro activation is verified offline on your device (see below); no license
+key is ever sent anywhere.</p>
+
+<h2>What is stored, and where</h2>
+<p>ConvoExport stores only its own settings in your browser's local storage
+(<code>chrome.storage.local</code>): your export format and filename preferences, your
+remaining free-export count for the day, and — if you activate Pro — your Pro license key
+and its locally verified status. Exported files are saved to your device through the
+browser's download function, only when you click Export. No conversation content is stored
+by the extension itself.</p>
+
+<h2>What is NOT collected</h2>
+<ul>
+  <li>No personal information, no identifiers, no usage statistics, no crash reports.</li>
+  <li>No browsing history. The extension only runs on ChatGPT and Claude pages, and only
+      to read the conversation you ask it to export.</li>
+  <li>No cookies, no third-party scripts, no remote calls of any kind — including for Pro
+      activation (see below).</li>
+</ul>
+
+<h2>Conversation content</h2>
+<p>When you click Export, the extension's content script reads the conversation visible on
+the ChatGPT or Claude page you are viewing, converts it to Markdown, plain text, Word, or
+PDF (via the print view), and downloads the file to your device. This processing happens
+entirely on your device; conversation content is never copied out, stored separately, or
+sent anywhere. The extension does not read any page other than the ChatGPT or Claude
+conversation tab you export from.</p>
+
+<h2>Pro license verification (offline — no network call)</h2>
+<p>Pro is optional. If you buy Pro, you receive an offline activation key. When you paste
+the key into the extension, it is verified <strong>locally on your device</strong> using a
+built-in public key; the key is never transmitted to any server, and the extension makes
+no network request to check it. The key and its verified status are stored only in your
+browser's local storage. The seller keeps its own purchase records under the seller's own
+privacy policy; ConvoExport itself holds no copy.</p>
+
+<h2>Permissions and why each is needed</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td>storage</td><td>Save your export preferences, daily free-export count, and Pro
+      activation status in local browser storage.</td></tr>
+  <tr><td>downloads</td><td>Save the export file (Markdown / TXT / Word / PDF) to your device
+      when you click Export.</td></tr>
+  <tr><td>tabs</td><td>Find the ChatGPT or Claude tab you are exporting from, so the popup
+      can talk to its content script.</td></tr>
+  <tr><td>Host access: chatgpt.com, chat.openai.com, claude.ai</td><td>Run the content
+      script on ChatGPT and Claude conversation pages only, to read the conversation you
+      ask to export (see "Conversation content" above).</td></tr>
+</table>
+
+<h2>Deleting your data</h2>
+<p>Clear the extension's settings from its options page, or remove the extension from your
+browser — uninstalling deletes all locally stored data with it. We run no server, so there
+is no server copy of your data to request deletion of. Exported files on your device are
+yours to delete like any other file.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version changes any of the above (for example, an optional online feature),
+this page will be updated before that version ships, and any feature that transmits data
+will be opt-in and off by default.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent through the support/feedback channel on the
+extension's store listing page.</p>
+
+<hr>
+
+<h1>隐私政策 — ConvoExport</h1>
+<p class="meta">生效日期：2026 年 11 月 15 日 · 适用于 ConvoExport 1.0.0 及后续 1.x 版本。</p>
+
+<h2>一句话版本</h2>
+<p>ConvoExport <strong>没有账号、没有任何统计、没有自己的服务器</strong>，
+<strong>不发出任何网络请求</strong>。你的对话只在你自己的浏览器内被读取、转换成导出文件
+保存在你的设备上，绝不会被收集、传输、出售或分享。Pro 激活在你的设备上离线验证
+（见下文）；激活钥匙从不发送到任何地方。</p>
+
+<h2>保存什么、存在哪里</h2>
+<p>ConvoExport 只在浏览器本地存储（<code>chrome.storage.local</code>）中保存它自己的
+设置：导出格式与文件名偏好、当日剩余免费导出次数，以及（如已激活 Pro）Pro 激活钥匙
+与本地验证状态。导出文件仅在你点击「导出」时通过浏览器下载功能保存到你的设备。
+扩展本身不保存任何对话内容。</p>
+
+<h2>不收集什么</h2>
+<ul>
+  <li>不收集个人信息、标识符、使用统计、崩溃报告，一概不收集。</li>
+  <li>不记录浏览历史。扩展只在 ChatGPT 与 Claude 页面上运行，且只读取你要导出的那段对话。</li>
+  <li>无 Cookie、无第三方脚本、无任何远程调用——包括 Pro 激活（见下文）。</li>
+</ul>
+
+<h2>对话内容如何处理</h2>
+<p>当你点击「导出」，扩展的内容脚本读取你正在查看的 ChatGPT 或 Claude 页面上的对话，
+转换成 Markdown、纯文本、Word 或 PDF（经打印视图），并下载到你的设备。处理完全在本地
+进行；对话内容不会被复制出去、另行存储或发送到任何地方。扩展不会读取除你要导出的
+ChatGPT / Claude 对话标签页之外的任何页面。</p>
+
+<h2>Pro 钥匙校验（离线，不联网）</h2>
+<p>Pro 为可选付费功能。购买后你会收到一个离线激活钥匙；粘贴到扩展后，钥匙使用内置公钥
+在<strong>你的设备上本地验证</strong>，从不传输到任何服务器，扩展也不会发出任何网络请求
+去校验它。钥匙与验证状态只保存在你的浏览器本地存储中。卖家按其自身隐私政策保留购买
+记录；ConvoExport 本身不持有任何副本。</p>
+
+<h2>权限及用途</h2>
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr><td>storage</td><td>将导出偏好、每日免费导出次数、Pro 激活状态保存在浏览器本地存储。</td></tr>
+  <tr><td>downloads</td><td>在你点击「导出」时把导出文件（Markdown / TXT / Word / PDF）保存到你的设备。</td></tr>
+  <tr><td>tabs</td><td>找到你要导出的 ChatGPT 或 Claude 标签页，让弹窗与内容脚本通信。</td></tr>
+  <tr><td>站点权限：chatgpt.com、chat.openai.com、claude.ai</td><td>仅在 ChatGPT 与 Claude 对话页上运行内容脚本，读取你要导出的对话（见上「对话内容如何处理」）。</td></tr>
+</table>
+
+<h2>删除数据</h2>
+<p>可在扩展设置页清除设置；或直接卸载扩展——卸载即删除全部本地数据。我们没有服务器，
+因此你的数据不存在需要申请删除的服务器副本。已导出到你设备上的文件由你自行删除。</p>
+
+<h2>政策变更</h2>
+<p>若未来版本改变以上任何一条（例如增加可选在线功能），本页会在该版本发布前更新，
+且任何会传输数据的功能都将默认关闭、需你主动开启。</p>
+
+<h2>联系</h2>
+<p>关于本政策的问题，可通过扩展在商店详情页提供的支持/反馈渠道联系我们。</p>
+
+</body>
+</html>
